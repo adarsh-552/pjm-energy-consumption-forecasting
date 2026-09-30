@@ -109,10 +109,8 @@ Historical PJM Energy Data
           ▼
     Cloud Deployment
 ```
-<<<<<<< HEAD
-=======
----
->>>>>>> 8c9dcb6 (Update README)
+
+--- 
 
 # ⚙️ Feature Engineering
 
