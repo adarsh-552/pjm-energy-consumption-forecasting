@@ -225,3 +225,49 @@ XGBoost Forecasting
 30-Day Forecast
       ↓
 Streamlit Deployment
+
+---
+
+# 🚀 Streamlit Dashboard
+
+The final forecasting system was deployed using **Streamlit Community Cloud**.
+
+### Dashboard Features
+
+- ⚡ Forecast summary
+- 📊 Average demand
+- 📈 Minimum and maximum demand
+- 📅 Forecast period
+- 📉 Interactive 30-day forecast visualization
+- 🤖 XGBoost model performance
+- 📋 720-hour forecast data
+- 📥 Forecast data download
+
+### 🌐 Live Dashboard
+
+**[Open Live Streamlit Dashboard](https://pjm-energy-consumption-forecasting-ilvbysnospmklqinhj2psn.streamlit.app/)**
+
+---
+
+# 🛠️ Technology Stack
+
+| Category | Technologies |
+|---|---|
+| Programming | Python |
+| Data Processing | Pandas, NumPy |
+| Visualization | Plotly, Matplotlib, Seaborn |
+| Machine Learning | XGBoost, LightGBM |
+| Statistical Forecasting | Statsmodels |
+| Development | Jupyter Notebook |
+| Dashboard | Streamlit |
+| Data Format | Excel |
+| Deployment | Streamlit Community Cloud |
+
+---
+
+# 📦 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/adarsh-552/pjm-energy-consumption-forecasting.git
