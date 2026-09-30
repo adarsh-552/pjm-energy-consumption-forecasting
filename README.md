@@ -107,3 +107,36 @@ Historical PJM Energy Data
           │
           ▼
     Cloud Deployment
+```
+
+# ⚙️ Feature Engineering
+## 1. Temporal Features
+
+- `Hour`
+- `Day`
+- `Month`
+- `Year`
+- `DayOfWeekNum`
+- `IsHoliday`
+
+## 2. Cyclical Features
+
+Cyclical encoding was used for periodic time-based variables.
+
+- `Hour_sin`
+- `Hour_cos`
+- `Month_sin`
+- `Month_cos`
+- `DayOfWeek_sin`
+- `DayOfWeek_cos`
+
+This helps the model understand relationships such as:
+
+```text
+23:00 → 00:00
+December → January
+Sunday → Monday
+
+
+
+
