@@ -109,6 +109,10 @@ Historical PJM Energy Data
           ▼
     Cloud Deployment
 ```
+<<<<<<< HEAD
+=======
+---
+>>>>>>> 8c9dcb6 (Update README)
 
 # ⚙️ Feature Engineering
 
@@ -196,10 +200,100 @@ The final forecasting system generates hourly electricity demand predictions for
 The forecasting system uses a recursive prediction approach.
 
 ```text
+This helps the model understand relationships such as:
+
+```text
 23:00 → 00:00
 December → January
 Sunday → Monday
+```
 
+---
 
+# 🔮 30-Day Forecast
 
+The final XGBoost model was used to generate a recursive hourly forecast for the next 30 days.
 
+### Forecast Details
+
+| Information | Value |
+|---|---:|
+| Model | XGBoost |
+| Forecast Horizon | 30 Days |
+| Total Predictions | 720 Hours |
+
+---
+
+# 🔁 Forecasting Approach
+
+The future forecast was generated using a recursive prediction approach.
+
+```text
+Historical Data
+      │
+      ▼
+Generate Features
+      │
+      ▼
+XGBoost Prediction
+      │
+      ▼
+Add Prediction to History
+      │
+      ▼
+Generate Next-Hour Features
+      │
+      ▼
+Predict Next Hour
+      │
+      ▼
+Repeat Until 720 Hours
+```
+
+---
+
+## ⭐ Project Highlights
+
+- End-to-end electricity demand forecasting workflow
+- Time-series based feature engineering
+- Machine learning model evaluation
+- 30-day / 720-hour hourly forecasting
+- Interactive Streamlit dashboard
+- Downloadable forecast results
+- Cloud deployment using Streamlit Community Cloud
+
+---
+
+## 🔗 Quick Access
+
+🌐 **Live Dashboard:**  
+https://pjm-energy-consumption-forecasting-ilvbysnospmklqinhj2psn.streamlit.app/
+
+💻 **GitHub Repository:**  
+https://github.com/adarsh-552/pjm-energy-consumption-forecasting
+
+---
+
+# 👨‍💻 Author
+
+## Adarsh Nallannagiri
+
+**B.Tech – Computer Science Engineering**
+
+📧 **Email:** aadharsh172@gmail.com
+
+💻 **GitHub:** [adarsh-552](https://github.com/adarsh-552)
+
+🔗 **LinkedIn:** [Adarsh Nallannagiri](https://www.linkedin.com/in/adarsh-nallannagiri/)
+
+### Areas of Interest
+
+- Data Science
+- Machine Learning
+- Python
+- Data Analytics
+- Full-Stack Development
+
+---
+
+⭐ **Thank you for exploring this project!**
