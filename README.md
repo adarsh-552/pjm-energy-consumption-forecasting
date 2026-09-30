@@ -108,3 +108,162 @@ Historical PJM Energy Data
           │
           ▼
     Cloud Deployment
+```
+---
+
+# ⚙️ Feature Engineering
+
+Time-series features were created to help the machine learning model capture electricity demand patterns.
+
+## Temporal Features
+
+- `Hour`
+- `Day`
+- `Month`
+- `Year`
+- `DayOfWeekNum`
+- `IsHoliday`
+
+## Cyclical Features
+
+Cyclical encoding was used to represent periodic time relationships.
+
+- `Hour_sin`
+- `Hour_cos`
+- `Month_sin`
+- `Month_cos`
+- `DayOfWeek_sin`
+- `DayOfWeek_cos`
+
+## Lag Features
+
+Previous electricity consumption values were used to capture historical demand behavior.
+
+## Rolling Features
+
+Rolling statistics were used to capture recent demand trends.
+
+---
+
+# 🤖 Model Development
+
+The project evaluates forecasting approaches using statistical and machine-learning methods.
+
+### Statistical Forecasting
+
+- Seasonal Naive
+- Exponential Smoothing
+- Holt's Linear Trend
+- Holt-Winters
+
+### Machine Learning
+
+- XGBoost
+- LightGBM
+
+The final deployed forecasting model is **XGBoost**.
+
+---
+
+# 📏 Model Evaluation
+
+Model performance was evaluated using:
+
+- **MAE** — Mean Absolute Error
+- **RMSE** — Root Mean Squared Error
+- **MAPE** — Mean Absolute Percentage Error
+
+A chronological test split was used to preserve the time-series nature of the dataset.
+
+---
+
+# 🔮 30-Day Forecast
+
+The final forecasting system generates hourly electricity demand predictions for a **30-day forecasting horizon**.
+
+### Forecast Details
+
+| Information | Value |
+|---|---:|
+| Forecast Horizon | 30 Days |
+| Forecast Frequency | Hourly |
+| Total Predictions | 720 Hours |
+| Final Model | XGBoost |
+
+---
+
+# 🔁 Forecasting Approach
+
+The forecasting system uses a recursive prediction approach.
+
+```text
+Historical Data
+      │
+      ▼
+Generate Features
+      │
+      ▼
+XGBoost Prediction
+      │
+      ▼
+Add Prediction to History
+      │
+      ▼
+Generate Next-Hour Features
+      │
+      ▼
+Predict Next Hour
+      │
+      ▼
+Repeat Until 720 Hours
+```
+---
+
+## ⭐ Project Highlights
+
+- End-to-end electricity demand forecasting workflow
+- Time-series based feature engineering
+- Machine learning model evaluation
+- 30-day / 720-hour hourly forecasting
+- Interactive Streamlit dashboard
+- Downloadable forecast results
+- Cloud deployment using Streamlit Community Cloud
+
+---
+
+## 🔗 Quick Access
+
+🌐 **Live Dashboard:**  
+https://pjm-energy-consumption-forecasting-ilvbysnospmklqinhj2psn.streamlit.app/
+
+💻 **GitHub Repository:**  
+https://github.com/adarsh-552/pjm-energy-consumption-forecasting
+
+---
+
+---
+
+# 👨‍💻 Author
+
+## Adarsh Nallannagiri
+
+**B.Tech – Computer Science Engineering**
+
+📧 **Email:** aadharsh172@gmail.com
+
+💻 **GitHub:** [adarsh-552](https://github.com/adarsh-552)
+
+🔗 **LinkedIn:** [Adarsh Nallannagiri](https://www.linkedin.com/in/adarsh-nallannagiri/)
+
+### Areas of Interest
+
+- Data Science
+- Machine Learning
+- Python
+- Data Analytics
+- Full-Stack Development
+
+---
+
+⭐ **Thank you for exploring this project!**
+
